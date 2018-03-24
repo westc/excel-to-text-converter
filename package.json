@@ -1,0 +1,46 @@
+{
+  "name": "excel-to-text",
+  "productName": "Excel to Text",
+  "version": "1.0.0",
+  "description": "Converts Excel files to a text file.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build -wm --x64",
+    "builder-help": "build --help"
+  },
+  "keywords": [
+    "CSV",
+    "TSV",
+    "TXT",
+    "Excel",
+    "XLS",
+    "XLSX",
+    "Electron"
+  ],
+  "author": {
+    "name": "Christopher West",
+    "url": "http://cwestify.com/"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "latest",
+    "electron-builder": "latest"
+  },
+  "dependencies": {
+    "xlsx": "latest"
+  },
+  "build": {
+    "appId": "com.cwestify.excel2text",
+    "dmg": {
+    },
+    "nsis": {
+      "oneClick": true,
+      "allowElevation": true,
+      "runAfterFinish": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  }
+}

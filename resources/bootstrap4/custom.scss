@@ -1,0 +1,9 @@
+@import "scss/bootstrap";
+
+.btn {
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.2) 49%, rgba(0,0,0,0.1) 51%, rgba(0,0,0,0.05))!important;
+  background-repeat: repeat-x!important;
+}
+.btn:active, .btn.active {
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.125), rgba(255,255,255,0.05) 49%, rgba(0,0,0,0.025) 51%, rgba(0,0,0,0.0125))!important;
+}
