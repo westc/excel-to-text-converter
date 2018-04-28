@@ -7,7 +7,9 @@
   "scripts": {
     "start": "electron .",
     "pack": "build --dir",
-    "dist": "build -wm --x64",
+    "dist-all": "build -wm --x64",
+    "dist-win": "build -w --x64",
+    "dist-mac": "build -w --x64",
     "builder-help": "build --help"
   },
   "keywords": [
@@ -33,8 +35,7 @@
   },
   "build": {
     "appId": "com.cwestify.excel2text",
-    "dmg": {
-    },
+    "dmg": {},
     "nsis": {
       "oneClick": true,
       "allowElevation": true,
