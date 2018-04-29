@@ -9,7 +9,7 @@
     "pack": "build --dir",
     "dist-all": "build -wm --x64",
     "dist-win": "build -w --x64",
-    "dist-mac": "build -w --x64",
+    "dist-mac": "build -m --x64",
     "builder-help": "build --help"
   },
   "keywords": [
